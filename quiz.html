@@ -1,39 +1,22 @@
-<script>
-    const quizData = [
-        // General Knowledge Questions
-        { question: "What is the capital of India?", options: ["Mumbai", "Kolkata", "Delhi", "Chennai"], answer: 2 },
-        { question: "Who is known as the 'Missile Man of India'?", options: ["APJ Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "C.V. Raman"], answer: 0 },
-        { question: "Which is the largest planet in the Solar System?", options: ["Earth", "Mars", "Jupiter", "Saturn"], answer: 2 },
-        { question: "Who wrote the Indian national anthem?", options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Subhash Chandra Bose"], answer: 0 },
-        { question: "Who created this website?", options: ["Akash Bora", "Einstein", "Newton", "Elon Musk"], answer: 0 },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="answer-buttons"></div>
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
 
-        // Physics Questions
-        { question: "Who discovered gravity?", options: ["Newton", "Einstein", "Galileo", "Tesla"], answer: 0 },
-        { question: "What is the SI unit of force?", options: ["Joule", "Newton", "Pascal", "Watt"], answer: 1 },
-        { question: "What is the speed of light?", options: ["300,000 km/s", "150,000 km/s", "299,792 km/s", "3,00,000 m/s"], answer: 2 },
-        { question: "Who developed the theory of relativity?", options: ["Newton", "Einstein", "Galileo", "Bohr"], answer: 1 },
-        { question: "What type of wave is a light wave?", options: ["Longitudinal", "Transverse", "Mechanical", "Sound"], answer: 1 },
-        { question: "What is the SI unit of electric current?", options: ["Ohm", "Volt", "Ampere", "Watt"], answer: 2 },
-        { question: "Which law states that energy cannot be created or destroyed?", options: ["Newton’s First Law", "Law of Conservation of Energy", "Ohm’s Law", "Kepler’s Law"], answer: 1 }
-    ];
-
-    let currentQuestion = 0;
-
-    function loadQuestion() {
-        document.getElementById("question").textContent = quizData[currentQuestion].question;
-        quizData[currentQuestion].options.forEach((option, index) => {
-            document.getElementById(`option${index}`).textContent = option;
-        });
-    }
-
-    function checkAnswer(selected) {
-        const correct = quizData[currentQuestion].answer;
-        if (selected === correct) {
-            document.getElementById("result").textContent = "Correct!";
-        } else {
-            document.getElementById("result").textContent = "Wrong! Try again.";
-        }
-    }
-
-    loadQuestion();
-</script>
+    <!-- Linking the JavaScript file -->
+    <script src="quiz.js"></script>
+</body>
+</html>
