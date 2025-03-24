@@ -1,29 +1,92 @@
 const questions = [
     {
-        question: "What is the capital of France?",
+        question: "Who is the creator of this website?",
         answers: [
-            { text: "Berlin", correct: false },
-            { text: "Madrid", correct: false },
-            { text: "Paris", correct: true },
-            { text: "Rome", correct: false }
+            { text: "Akash Bora", correct: true },
+            { text: "Debanga Das", correct: false },
+            { text: "Chinmoy Das", correct: false },
+            { text: "Anowar Hussain", correct: false }
         ]
     },
     {
-        question: "Which planet is known as the Red Planet?",
+        question: "Which is the largest moon in the Solar System?",
         answers: [
-            { text: "Earth", correct: false },
-            { text: "Mars", correct: true },
-            { text: "Jupiter", correct: false },
-            { text: "Venus", correct: false }
+            { text: "Titan", correct: false },
+            { text: "Europa", correct: false },
+            { text: "Ganymede", correct: true },
+            { text: "Io", correct: false }
         ]
     },
     {
-        question: "What is the chemical symbol for water?",
+        question: "What is the speed of light in vacuum?",
         answers: [
-            { text: "O2", correct: false },
-            { text: "H2O", correct: true },
+            { text: "3 × 10^6 m/s", correct: false },
+            { text: "3 × 10^8 m/s", correct: true },
+            { text: "3 × 10^10 m/s", correct: false },
+            { text: "3 × 10^12 m/s", correct: false }
+        ]
+    },
+    {
+        question: "Who developed the theory of relativity?",
+        answers: [
+            { text: "Isaac Newton", correct: false },
+            { text: "Albert Einstein", correct: true },
+            { text: "Galileo Galilei", correct: false },
+            { text: "Nikola Tesla", correct: false }
+        ]
+    },
+    {
+        question: "Which is the smallest prime number?",
+        answers: [
+            { text: "0", correct: false },
+            { text: "1", correct: false },
+            { text: "2", correct: true },
+            { text: "3", correct: false }
+        ]
+    },
+    {
+        question: "Which Indian scientist is known as the 'Missile Man of India'?",
+        answers: [
+            { text: "C.V. Raman", correct: false },
+            { text: "Homi Bhabha", correct: false },
+            { text: "A.P.J. Abdul Kalam", correct: true },
+            { text: "Vikram Sarabhai", correct: false }
+        ]
+    },
+    {
+        question: "What is the chemical formula of ammonia?",
+        answers: [
+            { text: "NH3", correct: true },
+            { text: "H2O", correct: false },
             { text: "CO2", correct: false },
-            { text: "NaCl", correct: false }
+            { text: "CH4", correct: false }
+        ]
+    },
+    {
+        question: "Which programming language is known as the 'mother of all languages'?",
+        answers: [
+            { text: "Python", correct: false },
+            { text: "C", correct: true },
+            { text: "Java", correct: false },
+            { text: "JavaScript", correct: false }
+        ]
+    },
+    {
+        question: "What is the SI unit of electric current?",
+        answers: [
+            { text: "Volt", correct: false },
+            { text: "Watt", correct: false },
+            { text: "Ampere", correct: true },
+            { text: "Ohm", correct: false }
+        ]
+    },
+    {
+        question: "Who discovered penicillin?",
+        answers: [
+            { text: "Alexander Fleming", correct: true },
+            { text: "Louis Pasteur", correct: false },
+            { text: "Joseph Lister", correct: false },
+            { text: "Robert Koch", correct: false }
         ]
     }
 ];
