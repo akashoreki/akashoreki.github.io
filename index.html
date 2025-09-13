@@ -1,40 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akashoreki</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akashoreki</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Akashoreki</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>About Akashoreki</h2>
-            <p>Hi I'm Akash Bora (owner of this website) & this website is a platform to share various content related to current affairs, physics, quizzes, and more!</p>
-            <a href="quiz.html">Play Quiz Game</a>
-        </section>
-        <section>
-            <h2>Latest Posts</h2>
-            <p>Coming soon...</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Akashoreki. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<h2>Contact Me</h2>
-<p>Email: <a href="mailto:your-email@example.com">borah0409@gmail.com</a></p>
-<p>Instagram: <a href="https://instagram.com/akashoreki" target="_blank">@akashoreki</a></
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Akashoreki</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle-theme">🌙</button>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to <span>Akashoreki</span></h1>
+    <p>A platform to share physics, current affairs, quizzes, and more!</p>
+    <div class="hero-buttons">
+      <a href="#blog" class="btn">Explore Blog</a>
+      <a href="#" class="btn secondary">Play Quiz</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="card">
+    <h2>About Akashoreki</h2>
+    <p>Hi, I'm <strong>Akash Bora</strong>, the creator of this site. 
+    Here I share content related to current affairs, physics, quizzes, and more. 
+    Stay tuned for updates!</p>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="card">
+    <h2>Latest Posts</h2>
+    <div class="posts">
+      <div class="post">
+        <h3>Coming Soon...</h3>
+        <p>Stay tuned for new blog posts and quizzes!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:borah0409@gmail.com">borah0409@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/akashoreki" target="_blank">@akashoreki</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Akashoreki. All rights reserved. Made with ❤️ by Akash Bora</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+                   </html>
